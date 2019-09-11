@@ -1,0 +1,74 @@
+import React from 'react';
+import Iframe from 'react-iframe';  // Iframe import
+import ItemComponent from './ItemComponent';  // ItemComponent import
+
+// Use the given data properties to create a dynamic section with a title, an iframe source, a description, a specified programming skill, and a website link.
+class Item extends React.Component {
+  constructor(){
+    super();
+
+    this.state = {
+      showDescription: false
+    };
+
+    this.showDetails = this.showDetails.bind(this);
+  }
+
+  showDetails(isShown){
+    this.setState({showDescription: !isShown});
+    console.log(this.state.showDescription);
+  }
+
+  render(){
+    let revealDescription = this.state.showDescription ? "reveal" : "";
+
+    let revealOrNot = this.state.showDescription ? `Hide the case study for the ${this.props.item.title} application.` : `Show the case study for the ${this.props.item.title} application.`;
+
+    return <div class="item">
+      {/* Title: */}
+      <h1>{this.props.item.title}</h1>
+      {/* Container class to hold the iframe: */}
+      <div class="image">
+        <Iframe url={this.props.item.site}
+        width="100%" 
+        min-height="550px"
+        height="550px"
+        max-height="550px"
+        scrolling="no"
+        id="myId"
+        className="frame"
+        display="initial"
+        position="relative"
+        allowFullScreen/>
+      </div>
+      {/* A container to hold a description */}
+      <article>
+        <p>{this.props.item.intro}</p>
+      </article>
+      {/* A container to hold the programming skill involved: */}
+      <article>
+        <p>Programming Language/Framework: {this.props.item.skill}.</p>
+      </article>
+      {/* A container to hold the link to the website: */}
+      <article>
+        <p><a href={this.props.item.site} className="App-link" target="_blank" rel="noopener noreferrer">Click here</a> to see the {this.props.item.title} app&rsquo;s full functionalities while <a href={this.props.item.source} className="App-link" target="_blank" rel="noopener noreferrer">this link</a> leads you to the code base of this application (which is hosted on <a href="https://repl.it" className="App-link" target="_blank" rel="noopener noreferrer">Repl.it</a>).</p>
+      </article>
+      <article>
+        <p><span className="reveal-or-not" onClick={() => this.showDetails(this.state.showDescription)}>{revealOrNot}</span></p>
+      </article>
+      <article className={"description " + revealDescription}>
+        <h4>Objective</h4>
+        <ItemComponent content={this.props.item.description.objective} />
+        <p><a href={this.props.item.source} target="_blank" rel="noopener noreferrer">Click here</a> to explore the codebase for this application and <a href={this.props.item.site} target="_blank" rel="noopener noreferrer">click here</a> to see the application itself.</p>
+        <h4>Implementation</h4>
+        <ItemComponent content={this.props.item.description.implementation} />
+        <h4>Features</h4>
+        <ItemComponent content={this.props.item.description.features} />
+        <h4>Lessons Learned</h4>
+        <ItemComponent content={this.props.item.description.learned} />
+      </article>
+    </div>;
+  }
+}
+
+export default Item;  // Export as Item

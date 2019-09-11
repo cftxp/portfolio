@@ -1,0 +1,77 @@
+#components {
+  background: black;
+  width: 100%;
+  padding: 1em 0;
+  margin: 0;
+  position: relative;
+
+  /* Allows for the flexbox: */
+  display: flex;
+  /* Flexbox as rows that wrap around each other: */
+  flex-flow: row wrap;
+
+  border-top: solid 0.5px black;
+  border-bottom: solid 0.5px black;
+  border-left: solid 1px black;
+  border-right: solid 1px black;
+}
+
+.item {
+  /* Maximum width of each item will be 33% - 3em: */
+  flex-basis: calc(33% - 2.85em);
+  width: 100%;
+  padding: 1em;
+  margin: 0 0.5em;
+  background: white;
+  color: black;
+  border-top: solid 0.5px black;
+  border-bottom: solid 0.5px black;
+  text-align: left;
+}
+
+  .item h1 {
+    text-align: center;
+  }
+
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+
+  .image {
+    height: 550px;
+  }
+
+  .description {
+    display: none;
+  }
+
+    .reveal-or-not:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+
+    .reveal {
+      display: block;
+    }
+
+img {
+  width: 50%;
+}
+
+@media screen and (max-width: 749px){
+  #components {
+    flex-flow: column nowrap;
+  }
+  .item {
+    flex-basis: 100%;
+    width: calc(100% - 4em);
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 750px) and (max-width: 1125px){
+  .item {
+    flex-basis: calc(50% - 3em);
+  }
+}
