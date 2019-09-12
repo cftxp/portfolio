@@ -3,6 +3,7 @@ import './List.css';
 import Item from './Item';
 
 class List extends React.Component {
+  /*
   constructor(){
     super();  // Call the Component superconstructor
     // Create the items array as a state:
@@ -14,6 +15,7 @@ class List extends React.Component {
       .then(json => {this.setState({items: json})})
       .catch(error => console.log(error));
   }
+  */
 
   render(){
     // Items array of objects:
