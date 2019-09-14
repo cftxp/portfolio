@@ -3,28 +3,16 @@ import './List.css';
 import Item from './Item';
 
 class List extends React.Component {
-  /*
-  constructor(){
-    super();  // Call the Component superconstructor
-    // Create the items array as a state:
-    this.state = { items: [] };
-
-    // Fetch items from items.json:
-    fetch("items.json")
-      .then(response => response.json())
-      .then(json => {this.setState({items: json})})
-      .catch(error => console.log(error));
-  }
-  */
 
   render(){
+    
     // Items array of objects:
     let items = [
       {
         title: "Privilege",
         site: "https://privilege.wokeus.com",
         source: "https://repl.it/@cftxp/privilege",
-        host: "Repl.it", 
+        host: "Repl.it",
         skill: "PHP",
         intro: "This is a thought experiment that I created as an educational tool to unpack the dynamics and nuances behind white privilege.",
         description: {
@@ -111,6 +99,7 @@ class List extends React.Component {
     return <div id="components">{itemComponents}</div>;
 
   }
+
 }
 
 export default List;  // Export the List class as List
