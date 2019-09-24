@@ -8,9 +8,13 @@ class Item extends React.Component {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> parent of 2f859dd... Code cleanup and re-commit
+=======
+    
+>>>>>>> parent of 08f5aaf... Initial commit
 =======
     
 >>>>>>> parent of 08f5aaf... Initial commit
