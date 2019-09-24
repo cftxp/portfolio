@@ -3,35 +3,9 @@ import './List.css';
 import Item from './Item';
 
 class List extends React.Component {
-  /*
-  constructor(){
-    super();  // Call the Component superconstructor
-    // Create the items array as a state:
-    this.state = { items: [] };
-
-    // Fetch items from items.json:
-    fetch("items.json")
-      .then(response => response.json())
-      .then(json => {this.setState({items: json})})
-      .catch(error => console.log(error));
-  }
-  */
 
   render(){
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
     
->>>>>>> parent of 08f5aaf... Initial commit
-=======
-    
->>>>>>> parent of 08f5aaf... Initial commit
-=======
-    
->>>>>>> parent of 08f5aaf... Initial commit
     // Items array of objects:
     let items = [
       {
@@ -39,15 +13,6 @@ class List extends React.Component {
         site: "https://privilege.wokeus.com",
         source: "https://repl.it/@cftxp/privilege",
         host: "Repl.it",
-=======
-    // Items array of objects:
-    let items = [
-      {
-        title: "Privilege",
-        site: "https://privilege.wokeus.com",
-        source: "https://repl.it/@cftxp/privilege",
-        host: "Repl.it", 
->>>>>>> parent of 2f859dd... Code cleanup and re-commit
         skill: "PHP",
         intro: "This is a thought experiment that I created as an educational tool to unpack the dynamics and nuances behind white privilege.",
         description: {
@@ -134,6 +99,7 @@ class List extends React.Component {
     return <div id="components">{itemComponents}</div>;
 
   }
+
 }
 
 export default List;  // Export the List class as List
