@@ -5,7 +5,14 @@ import ItemComponent from './ItemComponent';  // ItemComponent import
 // Use the given data properties to create a dynamic section with a title, an iframe source, a description, a specified programming skill, and a website link.
 class Item extends React.Component {
   constructor(){
+<<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of 2f859dd... Code cleanup and re-commit
+=======
+    
+>>>>>>> parent of 08f5aaf... Initial commit
     super();
 
     this.state = {
@@ -13,7 +20,6 @@ class Item extends React.Component {
     };
 
     this.showDetails = this.showDetails.bind(this);
-
   }
 
   showDetails(isShown){
@@ -22,7 +28,6 @@ class Item extends React.Component {
   }
 
   render(){
-
     let revealDescription = this.state.showDescription ? "reveal" : "";
 
     let revealOrNot = this.state.showDescription ? `Hide the case study for the ${this.props.item.title} application.` : `Show the case study for the ${this.props.item.title} application.`;
@@ -38,7 +43,7 @@ class Item extends React.Component {
           min-height="550px"
           height="550px"
           max-height="550px"
-          scrolling="yes"
+          scrolling="no"
           id="myId"
           className="frame"
           display="initial"
@@ -87,7 +92,6 @@ class Item extends React.Component {
         </article>
       </section>
     </div>;
-
   }
 }
 

@@ -3,16 +3,43 @@ import './List.css';
 import Item from './Item';
 
 class List extends React.Component {
+  /*
+  constructor(){
+    super();  // Call the Component superconstructor
+    // Create the items array as a state:
+    this.state = { items: [] };
+
+    // Fetch items from items.json:
+    fetch("items.json")
+      .then(response => response.json())
+      .then(json => {this.setState({items: json})})
+      .catch(error => console.log(error));
+  }
+  */
 
   render(){
+<<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> parent of 08f5aaf... Initial commit
     // Items array of objects:
     let items = [
       {
-        title: "PHP Portfolio",
-        site: "https://php.chrisfornesa.com",
-        source: "https://repl.it/@cftxp/php-privilege",
+        title: "Privilege",
+        site: "https://privilege.wokeus.com",
+        source: "https://repl.it/@cftxp/privilege",
         host: "Repl.it",
+=======
+    // Items array of objects:
+    let items = [
+      {
+        title: "Privilege",
+        site: "https://privilege.wokeus.com",
+        source: "https://repl.it/@cftxp/privilege",
+        host: "Repl.it", 
+>>>>>>> parent of 2f859dd... Code cleanup and re-commit
         skill: "PHP",
         intro: "This is a thought experiment that I created as an educational tool to unpack the dynamics and nuances behind white privilege.",
         description: {
@@ -35,9 +62,9 @@ class List extends React.Component {
         }
       },
       {
-        title: "React Portfolio",
-        site: "https://www.chrisfornesa.com",
-        source: "https://github.com/cftxp/portfolio",
+        title: "Time",
+        site: "https://time.chrisfornesa.com",
+        source: "https://github.com/cftxp/time",
         host: "GitHub",
         skill: "JavaScript/React framework",
         intro: "This is my first self-hosted React application: a simple clock/calendar that integrates the Date object using React components and methods.",
@@ -58,6 +85,31 @@ class List extends React.Component {
             lesson: "As this was my first React application, by working on this project, I was able to learn the basics of JSX syntax and how to integrate basic JavaScript functionalities into the React framework."
           }
         }
+      },
+      {
+        title: "Art",
+        site: "https://fornesa.design",
+        source: "https://github.com/cftxp/art-portfolio",
+        host: "GitHub",
+        skill: "JavaScript/React framework",
+        intro: "This art portfolio is a dynamic showcase of my artwork, that integrates my knowledge of stateful classes and states.",
+        description: {
+          objective: {
+            objective: "I created an art portfolio website for my artwork to help me expand my knowledge of states and their applications within the React framework, as well as to learn how to design a fully-functional and attractive React application."
+          },
+          implementation: {
+            preview: "This React application was implemented through the inclusion of various React components, alongside the implementation of React states and methods.",
+            classes: "The structure of this art portfolio React application includes an index.js file that render the App, List and Footer components to the React document object model of the index.html file. The List component, then, contains a set of Item components that hold the details of each specified Item according to the items.json file."
+          },
+          features: {
+            preview: "This art portfolio contains the following information about my artwork: the title, the image reference, the media of the piece, the description that I set for the piece, and the type of artwork.",
+            explanation: "These data make it possible to display the relevant information for each piece, as well as a preview of the piece itself.",
+            states: "Lastly, I was able to utilize states to allow for the visibility of only certain (or all) pieces based on methods that I included in the List component, one to show drawings, paintings, digital pieces, and mixed media artwork."
+          },
+          learned: {
+            "lesson": "Through this application, I expanded my knowledge of states and React framework functionalities by introducing myself to class constructors, component states, and component methods. Altogether, this project enabled me to compose and customize a fully-functional, dynamic React application."
+          }
+        }
       }
     ];
 
@@ -74,7 +126,6 @@ class List extends React.Component {
     return <div id="components">{itemComponents}</div>;
 
   }
-
 }
 
 export default List;  // Export the List class as List
