@@ -20,7 +20,11 @@ class List extends React.Component {
   render(){
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> parent of 08f5aaf... Initial commit
 =======
     
 >>>>>>> parent of 08f5aaf... Initial commit
