@@ -5,7 +5,7 @@ import ItemComponent from './ItemComponent';  // ItemComponent import
 // Use the given data properties to create a dynamic section with a title, an iframe source, a description, a specified programming skill, and a website link.
 class Item extends React.Component {
   constructor(){
-    
+
     super();
 
     this.state = {
@@ -38,7 +38,7 @@ class Item extends React.Component {
           min-height="550px"
           height="550px"
           max-height="550px"
-          scrolling="no"
+          scrolling="yes"
           id="myId"
           className="frame"
           display="initial"

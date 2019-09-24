@@ -17,8 +17,6 @@
 }
 
 .item {
-  /* Maximum width of each item will be 33% - 3em: */
-  flex-basis: calc(33% - 2.85em);
   width: 100%;
   padding: 1em;
   margin: 0 0.5em;
@@ -57,6 +55,7 @@
 
 img {
   width: 50%;
+  height: 50%;
 }
 
 @media screen and (max-width: 749px){
@@ -65,7 +64,6 @@ img {
   }
   .item {
     flex-basis: 100%;
-    width: calc(100% - 4em);
     margin: 0 auto;
   }
 }
