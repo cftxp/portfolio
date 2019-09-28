@@ -1,4 +1,4 @@
-#components {
+#components, #other {
   background: black;
   width: 100%;
   padding: 1em 0;
@@ -60,7 +60,7 @@ img {
 }
 
 @media screen and (max-width: 749px){
-  #components {
+  #components, #other {
     flex-flow: column nowrap;
   }
   .item {

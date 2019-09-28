@@ -5,7 +5,7 @@ import ItemComponent from './ItemComponent';  // ItemComponent import
 // Use the given data properties to create a dynamic section with a title, an iframe source, a description, a specified programming skill, and a website link.
 class Item extends React.Component {
   constructor(){
-    
+
     super();
 
     this.state = {
@@ -27,13 +27,15 @@ class Item extends React.Component {
 
     let revealOrNot = this.state.showDescription ? `Hide the case study for the ${this.props.item.title} application.` : `Show the case study for the ${this.props.item.title} application.`;
 
+    let showDisplay = (this.props.item.display === "#") ? "image hide" : "image";
+
     return <div class="item">
       <section>
         {/* Title: */}
         <h1>{this.props.item.title}</h1>
         {/* Container class to hold the iframe: */}
-        <div class="image">
-          <Iframe url={this.props.item.site}
+        <div class={showDisplay}>
+          <Iframe url={this.props.item.display}
           width="100%"
           min-height="550px"
           height="550px"
