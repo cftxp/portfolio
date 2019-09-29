@@ -3,6 +3,7 @@ import './App.css';
 
 // App components:
 import List from './List';
+import Other from './Other';
 
 // Images:
 import profile from './img/fornesa.png';
@@ -20,6 +21,7 @@ class App extends Component {
           </h1>
           {/* A list of portfolio components to display: */}
           <List />
+          <Other />
         </header>
       </div>
     );

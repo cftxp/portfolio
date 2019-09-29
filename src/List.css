@@ -42,6 +42,10 @@
     height: 550px;
   }
 
+  .hide {
+    display: none;
+  }
+
   .description {
     display: none;
   }
