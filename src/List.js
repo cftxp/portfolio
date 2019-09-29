@@ -10,7 +10,7 @@ class List extends React.Component {
     let items = [
       {
         title: "Privilege",
-        display: "https://privilege.react.chrisfornesa.com"
+        display: "https://privilege.react.chrisfornesa.com",
         site: "https://privilege.react.chrisfornesa.com",
         source: "https://repl.it/@cftxp/privilege",
         host: "Repl.it",
@@ -37,7 +37,7 @@ class List extends React.Component {
       },
       {
         title: "Time",
-        display: "https://time.react.chrisfornesa.com"
+        display: "https://time.react.chrisfornesa.com", 
         site: "https://time.react.chrisfornesa.com",
         source: "https://github.com/cftxp/time",
         host: "GitHub",
