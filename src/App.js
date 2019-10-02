@@ -17,7 +17,7 @@ class App extends Component {
             {/* The application logo: */}
             <img src={profile} className="App-logo" alt="logo" />
             {/* The application's heading: */}
-            <code>Chris Fornesa&rsquo;s React Portfolio</code>
+            <code>Chris Fornesa - React Dev</code>
           </h1>
           {/* A list of portfolio components to display: */}
           <List />
