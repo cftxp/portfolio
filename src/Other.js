@@ -7,10 +7,10 @@ class Other extends React.Component {
   render(){
 
     // Items array of objects:
-    let items = [
+    let items = [/*
       {
         title: "Art",
-        display: "#", 
+        display: "#",
         site: "https://art.react.chrisfornesa.com",
         source: "https://github.com/cftxp/art-portfolio",
         host: "GitHub",
@@ -34,7 +34,7 @@ class Other extends React.Component {
           }
         }
       }
-    ];
+    */];
 
     // Empty array to hold items:
     let itemComponents = [];
