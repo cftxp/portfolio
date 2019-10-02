@@ -86,6 +86,7 @@ class List extends React.Component {
             "lesson": "Through this application, I expanded my knowledge of states and React framework functionalities by introducing myself to class constructors, component states, and component methods. Altogether, this project enabled me to compose and customize a fully-functional, dynamic React application."
           }
         }
+      }
     ];
 
     // Empty array to hold items:
