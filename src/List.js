@@ -10,9 +10,9 @@ class List extends React.Component {
     let items = [
       {
         title: "Privilege",
-        display: "https://privilege.react.chrisfornesa.com",
-        site: "https://privilege.react.chrisfornesa.com",
-        source: "https://repl.it/@cftxp/privilege",
+        display: "https://privilege.react.fornesa.design",
+        site: "https://privilege.react.fornesa.design",
+        source: "https://github.com/cftxp/privilege",
         host: "Repl.it",
         skill: "React",
         intro: "This is a thought experiment that I created as an educational tool to unpack the dynamics and nuances behind white privilege.",
@@ -37,8 +37,8 @@ class List extends React.Component {
       },
       {
         title: "Time",
-        display: "https://time.react.chrisfornesa.com",
-        site: "https://time.react.chrisfornesa.com",
+        display: "https://time.react.fornesa.design",
+        site: "https://time.react.fornesa.design",
         source: "https://github.com/cftxp/time",
         host: "GitHub",
         skill: "JavaScript/React framework",
@@ -63,8 +63,8 @@ class List extends React.Component {
       },
       {
         title: "Art",
-        display: "https://art.react.chrisfornesa.com",
-        site: "https://art.react.chrisfornesa.com",
+        display: "https://art.react.fornesa.design",
+        site: "https://art.react.fornesa.design",
         source: "https://github.com/cftxp/art-portfolio",
         host: "GitHub",
         skill: "JavaScript/React framework",
