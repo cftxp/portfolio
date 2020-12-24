@@ -10,8 +10,8 @@ class List extends React.Component {
     let items = [
       {
         title: "Privilege",
-        display: "https://privilege.react.fornesa.design",
-        site: "https://privilege.react.fornesa.design",
+        display: "https://privilege.react.csf.codes",
+        site: "https://privilege.react.csf.codes",
         source: "https://github.com/cftxp/privilege",
         host: "Repl.it",
         skill: "React",
@@ -37,8 +37,8 @@ class List extends React.Component {
       },
       {
         title: "Time",
-        display: "https://time.react.fornesa.design",
-        site: "https://time.react.fornesa.design",
+        display: "https://time.react.csf.codes",
+        site: "https://time.react.csf.codes",
         source: "https://github.com/cftxp/time",
         host: "GitHub",
         skill: "JavaScript/React framework",
@@ -63,8 +63,8 @@ class List extends React.Component {
       },
       {
         title: "Art",
-        display: "https://art.react.fornesa.design",
-        site: "https://art.react.fornesa.design",
+        display: "https://art.react.csf.codes",
+        site: "https://art.react.csf.codes",
         source: "https://github.com/cftxp/art-portfolio",
         host: "GitHub",
         skill: "JavaScript/React framework",
