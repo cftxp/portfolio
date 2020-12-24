@@ -1,7 +1,7 @@
 [
   {
     "title": "Privilege",
-    "site": "https://privilege.react.fornesa.design",
+    "site": "https://privilege.react.csf.codes",
     "source": "https://github.com/cftxp/privilege",
     "skill": "PHP",
     "intro": "This is a thought experiment that I created as an educational tool to unpack the dynamics and nuances behind white privilege.",
@@ -26,7 +26,7 @@
   },
   {
     "title": "Time",
-    "site": "https://time.react.fornesa.design",
+    "site": "https://time.react.csf.codes",
     "source": "https://github.com/cftxp/time",
     "skill": "JavaScript/React framework",
     "intro": "This is my first self-hosted React application: a simple clock/calendar that integrates the Date object using React components and methods.",
@@ -50,7 +50,7 @@
   },
   {
     "title": "Art",
-    "site": "https://art.react.fornesa.design",
+    "site": "https://art.react.csf.codes",
     "source": "https://github.com/cftxp/art-portfolio",
     "skill": "JavaScript/React framework",
     "intro": "This art portfolio is a dynamic showcase of my artwork, that integrates my knowledge of stateful classes and states.",
